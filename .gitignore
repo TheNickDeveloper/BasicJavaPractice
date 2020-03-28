@@ -24,3 +24,6 @@ hs_err_pid*
 
 # idea config
 .idea/*
+
+# JAVA compile folder
+out/*
