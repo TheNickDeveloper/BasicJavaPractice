@@ -15,7 +15,7 @@ On our way to master Java :)
 
 * Full Tutorial for Beginners: https://www.youtube.com/watch?v=grEKMHGYyns
 * Java knowledge reference: https://www.w3schools.com/java/
-* TBD
+* Name Conventions: https://www.geeksforgeeks.org/java-naming-conventions/
 
 
 ### Learing Path
