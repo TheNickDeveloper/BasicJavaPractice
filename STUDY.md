@@ -1,4 +1,4 @@
-# JAVA study week 1
+# JAVA study week 1-1
 
 ## 安裝
 在 MAC OS 上面本身就有 JAVA language, 但是要能夠使用 JAVA 開發, 必須安裝 JDK, [Java SE Development Kit](https://docs.oracle.com/javase/8/docs/index.html).
