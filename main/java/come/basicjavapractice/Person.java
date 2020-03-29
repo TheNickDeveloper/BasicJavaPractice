@@ -1,33 +1,60 @@
 package come.basicjavapractice;
 
+enum Status{
+    PENDING,
+    PROCESS,
+    PROGRESS
+}
+
 public class Person {
 
-    private String personName;
-    private static int personCounter = 0;
+    private int id;
+    private String name;
 
-    public Person(){
-        personCounter ++;
-        //Empty on purpose - default constructor
+    public Person(int id, String name) {
+        this.id = id;
+        this.name = name;
     }
 
-    public Person(String personName){
-        this.personName = personName;
+    public int getId() {
+        return id;
     }
 
-    public String name(){
-        return personName;
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String helloWorld() {
         return "Hello World";
     }
 
-
     public String hello(String name) {
         return "Hello " + name;
     }
 
-    public static int numberOfPersons() {
-        return personCounter;
+    public String getStatus(Status status){
+        var result = "null";
+
+        switch (status){
+            case PENDING:
+                result = status.PENDING.name();
+                break;
+            case PROCESS:
+                result = status.PROCESS.name();
+                break;
+            case PROGRESS:
+                result = status.PROGRESS.name();
+                break;
+        }
+        return result;
     }
+
 }
