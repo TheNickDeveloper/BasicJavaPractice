@@ -42,16 +42,20 @@ Reference: [https://caterpillar.gitbooks.io/javase6tutorial/content/c9_2.html](h
 四種主要的 Access modifiers: 
 * public
 可以被其他 class 調用的 method/variable/class.
+
 * private
 只能被宣告時所在的 class 調用的 method/variable/class, 儘量讓 class 裡面的 variable 是 private 的, 不然很容易讓別的 class 不小心修改到. 
 如果只想讓別的 class 取用 private variable, 可以另外宣告一個 public method 去 return class 內的 private variable.
+
 * default
 只有在沒有定義任何其他類型的 modifier 時候就預設定義的, 所以稱作 default, 他可以被在被宣告的同一個 package 的所有其他 class 調用, 所以又稱 package-private modifier, 這種 modifier 很少被使用到
+
 * protected
 與繼承行為相關, 暫時不討論.
 
 **non - Access modifiers**
 有很多種 non - Access modifiers:
+
 * static
 讓同一個 class 所 instance 的所有 objects 都共享 (有點像是 javascript 的全域變數)的 methods/variables, 不會因為是不同的 object 就有不同的 methods/variables.
 
