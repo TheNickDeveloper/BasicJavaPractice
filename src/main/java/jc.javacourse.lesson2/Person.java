@@ -1,8 +1,11 @@
 package jc.javacourse.lesson2;
 
 public class Person {
+  private static int personCounter;
+
   public Person () {
     // Default constructor
+    personCounter++;
   }
 
   public String sayHelloToWorld() {
@@ -10,4 +13,8 @@ public class Person {
   }
 
   public String sayHelloTo(String name) { return "Hello " + name; }
+
+  public static int counter() {
+    return personCounter;
+  }
 }

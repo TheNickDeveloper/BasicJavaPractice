@@ -22,4 +22,13 @@ public class PersonTest {
     assertEquals("Hello " + personName, jc.sayHelloTo(personName));
   }
 
+  @Test
+  public void shouldReturnTwoAfterInstanceTwoPeople() {
+    Person jc = new Person();
+    Person nick = new Person();
+    Person john = new Person();
+
+    assertEquals(3, Person.counter());
+  }
+
 }
