@@ -13,4 +13,13 @@ public class PersonTest {
     assertEquals("Hello World", jc.sayHelloToWorld());
   }
 
+  @Test
+  public void shouldReturnHelloNick() {
+    Person jc = new Person();
+
+    String personName = "Nick";
+
+    assertEquals("Hello " + personName, jc.sayHelloTo(personName));
+  }
+
 }
