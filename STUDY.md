@@ -1,4 +1,4 @@
-# JAVA study week 1-1
+# JAVA study week 1
 
 ## 安裝
 在 MAC OS 上面本身就有 JAVA language, 但是要能夠使用 JAVA 開發, 必須安裝 JDK, [Java SE Development Kit](https://docs.oracle.com/javase/8/docs/index.html).
@@ -36,9 +36,41 @@ Reference: [https://caterpillar.gitbooks.io/javase6tutorial/content/c9_2.html](h
 定義一個物件, 變數, 可以被調用的範圍, 可能是 class, 也可能是 package...
 
 [Access Modifier / 非 Access Modifier 的修飾詞 - 1](https://ithelp.ithome.com.tw/articles/10158077)
-
 [Access Modifier / 非 Access Modifier 的修飾詞 - 2](https://dotblogs.com.tw/brian/2013/07/17/111276)
 
+**Access modifiers**
+四種主要的 Access modifiers: 
+* public
+可以被其他 class 調用的 method/variable/class.
+* private
+只能被宣告時所在的 class 調用的 method/variable/class, 儘量讓 class 裡面的 variable 是 private 的, 不然很容易讓別的 class 不小心修改到. 
+如果只想讓別的 class 取用 private variable, 可以另外宣告一個 public method 去 return class 內的 private variable.
+* default
+只有在沒有定義任何其他類型的 modifier 時候就預設定義的, 所以稱作 default, 他可以被在被宣告的同一個 package 的所有其他 class 調用, 所以又稱 package-private modifier, 這種 modifier 很少被使用到
+* protected
+與繼承行為相關, 暫時不討論.
+
+**non - Access modifiers**
+有很多種 non - Access modifiers:
+* static
+讓同一個 class 所 instance 的所有 objects 都共享 (有點像是 javascript 的全域變數)的 methods/variables, 不會因為是不同的 object 就有不同的 methods/variables.
+
+
+### Constructor
+一個 class 內可以定義多個 Constructors, 也可以完全不定義 Constructor, 在 compiler 的時候, 如果程式碼完全沒有定義任何 Constructor, 會自動幫忙定義一個沒有任何 parameter 的 default constructor, 其意義同下: 
+```
+public class Person {
+
+    public Person() {
+       /*
+         default constructor, required by Hibernate
+       */
+    }
+
+}
+```
+但是上面這種寫法, 通常就不會叫做 default constructor (可是意義是一樣的).
+當已經有自行定義 Constructor 後, compiler 就不會自動幫你加上 default constructor, 所以建議每次在寫新的 Class 的時候, 都要自己建立一個 default constructor.
 
 ## 遇到的問題
 使用 intellij idea 的時候遇到下面問題:
