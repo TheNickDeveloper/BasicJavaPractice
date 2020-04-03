@@ -60,5 +60,5 @@ public class PersonTest {
     totalLoopTimes += doWhileLoopTimes;
     assertEquals(totalLoopTimes, Person.counter());
   }
-
+  
 }
