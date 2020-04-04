@@ -31,4 +31,34 @@ public class PersonTest {
     assertEquals(3, Person.counter());
   }
 
+  @Test
+  public void shouldReturnTotalLoopTimesAfterThreeTypesOfLoop() {
+    int totalLoopTimes = 0;
+    int forLoopTimes = 5;
+    int whileLoopTimes = 4;
+    int doWhileLoopTimes = 3;
+
+    for (int i = 0; i<forLoopTimes; i++) {
+      Person clonePerson = new Person();
+    }
+    totalLoopTimes += forLoopTimes;
+    assertEquals(totalLoopTimes, Person.counter());
+
+    int j = 0;
+    while (j<whileLoopTimes) {
+      Person clonePerson = new Person();
+      j++;
+    }
+    totalLoopTimes += whileLoopTimes;
+    assertEquals(totalLoopTimes, Person.counter());
+
+    int k=1;
+    do {
+      Person clonePerson = new Person();
+      k++;
+    } while (k<=doWhileLoopTimes);
+    totalLoopTimes += doWhileLoopTimes;
+    assertEquals(totalLoopTimes, Person.counter());
+  }
+
 }
