@@ -1,5 +1,7 @@
-package come.basicjavapractice;
+package com.basicjavapractice;
 
+import com.basicjavapractice.peopleinfo.Person;
+import com.basicjavapractice.peopleinfo.Status;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -1,10 +1,4 @@
-package come.basicjavapractice;
-
-enum Status{
-    PENDING,
-    PROCESS,
-    PROGRESS
-}
+package com.basicjavapractice.peopleinfo;
 
 public class Person {
 
