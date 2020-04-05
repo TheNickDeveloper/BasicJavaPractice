@@ -1,5 +1,5 @@
 package com.basicjavapractice.cars.interfaces;
 
-public interface IDrivalbe {
+public interface IDrivable {
     String drive();
 }
