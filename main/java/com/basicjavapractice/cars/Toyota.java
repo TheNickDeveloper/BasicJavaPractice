@@ -4,7 +4,7 @@ import com.basicjavapractice.cars.interfaces.ICar;
 
 public class Toyota implements ICar {
     private String carBrand = "Toyota";
-
+    private String weather;
     public String getCarBrand() {
         return this.carBrand;
     }

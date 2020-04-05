@@ -22,22 +22,18 @@ public class FlyCar extends Flyable implements ICar {
         return this.carWingsNumber;
     }
 
-    @Override
     public String getCarBrand() {
         return "CanFlyCar";
     }
 
-    @Override
     public void setCarBrand(String carBrand) {
         this.carBrand = carBrand;
     }
 
-    @Override
     public int age() {
         return 110;
     }
 
-    @Override
     public String drive() {
         return "Fly";
     }
